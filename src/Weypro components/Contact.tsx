@@ -1,20 +1,15 @@
-import Header from "./Header and footer/Header";
+import Header2 from "../header";
 import Footer from "./Header and footer/Footer";
 import ContactForm from "./Contact Form/ContactForm";
 
-
-
-
 const Contact = () => {
-  
   return (
     <>
-      <Header/>
+      <Header2 />
       <main>
-       <ContactForm/>
+        <ContactForm />
       </main>
-      <Footer/>
-
+      <Footer />
     </>
   );
 };

@@ -1,0 +1,90 @@
+
+/* hamburger menu*/
+.menu-icon {
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  border: 3px solid;
+  border-radius: 6px;
+  background-color: black;
+  width: 100%;
+  padding-left: 5px;
+}
+.menu-line {
+  width: 45px;
+  height: 8px;
+  background-color: rgb(244, 237, 237);
+  margin: 3px 0;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+.menu-items {
+  color: rgb(247, 241, 241);
+  text-decoration: none;
+  font-size: 25px;
+}
+.linkStyle {
+  color: rgb(227, 227, 241); /* Change this to the desired color */
+  text-decoration: none; /* Remove underline if desired */
+}
+/*end hamburger menu*/
+
+span{
+  color: red;
+  }
+  
+
+.h3-2{
+  display: flex;
+  justify-content: end;
+  font-size: 300%;
+    
+}
+
+  /*a CSS*/
+a{
+    width: 100px;
+    border: 3px ;
+    background-color: transparent;
+    font-size: 25px;    
+  }   
+  a:hover{
+    width: 105px;
+    border: none;
+    text-shadow: 1px 1px rgb(244, 241, 241);
+    background-color: transparent;
+    filter: drop-shadow(3px 3px rgb(240, 20, 20));
+  }
+  .nav2{
+    display: flex;
+    background-color: black;
+    gap: 1 ;
+    height: 47px;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  
+
+@media (max-width: 600px) {
+  .menu-icon {
+    display: flex;
+  }
+  .menu-items {
+    display: none;
+  }
+  .menu-items.open {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+  }
+  .menu-items button {
+    margin: 10px 15px;
+  }
+  
+  
+}
+
+
+

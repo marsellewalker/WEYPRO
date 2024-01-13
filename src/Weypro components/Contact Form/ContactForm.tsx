@@ -48,7 +48,6 @@ const ContactForm = () => {
 
   return (
     <div className="container">
-      <img src="weypro sitting.jpg" className="thisIsMe" alt="josh Of WeyPro" />
       <div className="imgText">
         <p>Contact me with what you would like to have done.</p>
         <p> I do :</p>

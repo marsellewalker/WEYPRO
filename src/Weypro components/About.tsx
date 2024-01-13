@@ -1,10 +1,10 @@
-import Header from "./Header and footer/Header";
+import Header2 from "../header";
 import Footer from "./Header and footer/Footer";
 
 const About = () => {
   return (
     <>
-      <Header />
+      <Header2 />
       <main>
         <div className="container">
           <div className="textandImageBox">
@@ -16,13 +16,10 @@ const About = () => {
                 for fifteen years now.
                 <br /> I take photos and video for any event you have. I have
                 done music videos, weddings and more.
+              
               </p>
             </div>
-            <img
-              className="aboutMeImage"
-              src="weypro himsef.jpg"
-              alt="WeyPro About me Image"
-            />
+            
           </div>
         </div>
       </main>

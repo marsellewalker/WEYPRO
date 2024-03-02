@@ -1,4 +1,5 @@
 import { useState } from "react";
+import img9 from '../../assets/weypro 9.jpg'
 
 const FORM_ENDPOINT = "Desktop "; // TODO - update to the correct endpoint
 
@@ -48,44 +49,45 @@ const ContactForm = () => {
 
   return (
     <div className="container">
+
       <div className="imgText">
-        <p>Contact me with what you would like to have done.</p>
-        <p> I do :</p>
-        <p> Photos $160</p>
-        <p> 1hr videos 300 2hr</p>
+        <p><b>Contact me with what you would like to have done.</b></p>
+        <p><b> I do :</b></p>
+        <p><b>Photos $160</b></p>
+        <p><b>1hr videos 300 2hr</b></p>
       </div>
+
+      <div className= 'form'> 
       <form action={FORM_ENDPOINT} onSubmit={handleSubmit} method="POST">
-        <div className="Yourname">
+      
+          <textarea
+            placeholder="Yourmessage"
+            name="message"
+            className="Yourmessage"
+          />
+        
           <input
             type="text"
             placeholder="Your name"
             className="Yourname"
           />
-        </div>
-        <div className="emailBox">
+
           <input
             type="email"
             placeholder="Email"
             name="email"
             className="email"
           />
-        </div>
-        <div className="YourmessageBox">
-          <textarea
-            placeholder="Yourmessage"
-            name="message"
-            className="Yourmessage"
-          />
-        </div>
-        <div className="submitBox">
+       
           <button
             className="submit"
             type="submit"
           >
             Send a message
           </button>
-        </div>
+
       </form>
+      </div>
     </div>
   );
 };

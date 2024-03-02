@@ -1,9 +1,9 @@
-// Import necessary React components and styles
 import { useState } from "react";
 import { Link } from "react-router-dom";
-// Functional component for the header
+
 const Header2 = () => {
-  // State to track the visibility of the menu
+
+  // useState to track the visibility of the menu
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   // Function to toggle the menu
@@ -12,7 +12,7 @@ const Header2 = () => {
   };
 
   return (
-    <div className="c">
+    <>
       
       {/* Render hamburger menu icon when screen width is 600px or less */}
           <div className="menu-icon" onClick={toggleMenu}>
@@ -42,7 +42,7 @@ const Header2 = () => {
           </div>
         </header>
       </div>
-    </div>
+    </>
   );
 };
 

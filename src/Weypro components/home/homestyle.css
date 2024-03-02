@@ -1,0 +1,124 @@
+ /*home*/
+ .containerHome{
+  height:100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction:row;
+  }
+
+  .name_n_motto{
+    display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+    border: 1px solid;
+    border-end-end-radius: 20px;
+    border: 20px;
+    padding: 50px;
+    height:100%;
+    width: 100%;
+  }
+
+  .cover_pic{
+    background-image: url('waypro img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:500px;
+    width: 50%;
+    border-radius: 20px;
+    margin-left: 50px;
+  }
+  
+
+
+
+/*These media quaries adjust for two sizes and one is for a phone size  */
+  @media(max-width:1100px){
+    .cover_pic{
+     display: none;
+    }
+    .name_n_motto{
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      flex-direction: column;
+      border: 1px solid;
+      border-end-end-radius: 20px;
+      border: 20px;
+      padding: 0px;
+      height:100%;
+      border: 3px solid;
+       width: 100%;
+     }
+  }/*Phone size*/
+  @media(max-width:375px){
+    .name_n_motto{
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      flex-direction: column;
+      border: 1px solid;
+      border-end-end-radius: 20px;
+      border: 20px;
+      padding: 0px;
+      height:457px;
+      border: 3px solid;
+      width: 100%;
+    }
+
+
+
+
+
+
+
+
+/*weypro name and qoute*/
+    h1{
+        font-size: 50px;
+        text-shadow: 3px 3px rgb(94, 82, 82);
+      }
+}
+
+
+
+
+
+
+
+
+
+ main{
+    background: linear-gradient(rgba(255,255,255, 0.5), rgba(239, 17, 17, 0.1));;
+     
+  }
+
+  /*weypro name and qoute*/
+  h1{
+    font-size: 100px;
+    text-shadow: 3px 3px rgb(94, 82, 82);
+  }
+  span{
+    color: red;
+  }
+  h2{
+   font-size: 40px;
+   text-shadow: 2px 2px 5px gray;
+   white-space: nowrap;
+  
+  }
+  h3{
+    font-size: 25px;
+   text-shadow: 1px 1px 5px gray;
+   white-space: nowrap;
+   }
+  
+ 
+  
+  
+
+
+
+
+

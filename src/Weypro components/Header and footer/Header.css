@@ -5,9 +5,7 @@
   display: none;
   flex-direction: column;
   border: 3px solid;
-  border-radius: 6px;
   background-color: black;
-  width: 100%;
   padding-left: 5px;
 }
 .menu-line {
@@ -27,7 +25,30 @@
   color: rgb(227, 227, 241); /* Change this to the desired color */
   text-decoration: none; /* Remove underline if desired */
 }
+
+/*Hamburger media quarie*/
+@media (max-width: 600px) {
+  .menu-icon {
+    display: flex;
+  }
+  .menu-items {
+    display: none;
+  }
+  .menu-items.open {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+  }
+  .menu-items button {
+    margin: 10px 15px;
+  }  
+}
 /*end hamburger menu*/
+
+
+
+
+
 
 span{
   color: red;
@@ -53,12 +74,12 @@ a{
     border: none;
     text-shadow: 1px 1px rgb(244, 241, 241);
     background-color: transparent;
-    filter: drop-shadow(3px 3px rgb(240, 20, 20));
+    filter: drop-shadow(3px 3px 4px rgb(240, 20, 20));
   }
   .nav2{
     display: flex;
     background-color: black;
-    gap: 1 ;
+    gap: 15px ;
     height: 47px;
     justify-content: center;
     align-items: center;
@@ -67,24 +88,7 @@ a{
   
   
 
-@media (max-width: 600px) {
-  .menu-icon {
-    display: flex;
-  }
-  .menu-items {
-    display: none;
-  }
-  .menu-items.open {
-    display: flex;
-    flex-direction: column;
-    height: 50px;
-  }
-  .menu-items button {
-    margin: 10px 15px;
-  }
-  
-  
-}
+
 
 
 
